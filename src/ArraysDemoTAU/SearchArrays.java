@@ -1,4 +1,9 @@
 package ArraysDemoTAU;
 
-public class SearchArrays {
+public class SearchArrays extends LotteryTicket {
+    public static void main(String[] args) {
+    }
+
+
+
 }
