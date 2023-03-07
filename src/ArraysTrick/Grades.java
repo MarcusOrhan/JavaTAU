@@ -1,12 +1,9 @@
 package ArraysTrick;
 
 import java.util.Scanner;
-
 public class Grades {
-
     private static int[] grades;
     private static final Scanner scanner = new Scanner(System.in);
-
     public static void main(String[] args) {
         System.out.println("How many Biology grades would you like to enter?");
         grades = new int[scanner.nextInt()];
@@ -16,14 +13,12 @@ public class Grades {
         System.out.println("Highest: " + getHighest());
         System.out.println("Lowest: " + getLowest());
     }
-
     public static void getGrades() {
         for (int i = 0; i < grades.length; i++) {
             System.out.println("Enter Biology grade #" + (i + 1));
             grades[i] = scanner.nextInt();
         }
     }
-
     public static int calculateSum() {
         int sum = 0;
         for (int grade : grades) {
@@ -45,7 +40,6 @@ sum += grade;
         }
         return highest;
     }
-
 
     public static int getLowest() {
         int lowest = grades[0];
