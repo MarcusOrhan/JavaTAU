@@ -2,8 +2,9 @@ package DataTypes;
 
 public class TextProcessor {
     public static void main(String[] args) {
-        countWords("Su dunyadaki en mutlu kisi mutluluk verendir. ");
-        reverseWords(" Merhaba Sevgiyle acan Cicek.");
+//        countWords("Su dunyadaki en mutlu kisi mutluluk verendir. ");
+//        reverseWords(" Merhaba Sevgiyle acan Cicek.");
+        convertCamelCase("Camel case Test senaryosu.");
     }
 
     /**
@@ -29,6 +30,10 @@ public class TextProcessor {
         for (int i = text.length()-1; i >=0 ; i--) {
             System.out.print(text.charAt(i));
         }
+    }
+
+    public static void convertCamelCase(String text){
+
     }
 
 }
