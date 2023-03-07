@@ -5,6 +5,7 @@ public class TextProcessor {
 //        countWords("Su dunyadaki en mutlu kisi mutluluk verendir. ");
 //        reverseWords(" Merhaba Sevgiyle acan Cicek.");
         convertCamelCase("Camel case Test senaryosu.");
+        addSpaces("HeyLittleTester?HowIsEverythingGoingToday?");
     }
 
     /**
@@ -32,8 +33,31 @@ public class TextProcessor {
         }
     }
 
-    public static void convertCamelCase(String text){
+    /**
+     * adds spaces before each uppercase letter
+     * @param text jumbled text
+     */
+    public static void addSpaces(String text){
+        var modifiedText = new StringBuilder(text);
+        for (int i = 0; i < modifiedText.length(); i++) {
+            if( i!=0 && Character.isUpperCase(modifiedText.charAt(i))){
+                modifiedText.insert(i, " ");
+                i++;//adding index of space just added to insertion place
+            }
+        }
+        System.out.println("modifiedText = " + modifiedText);
+    }
 
+    /**
+     * converts a string Sentence to camelCase
+     * removes spaces and capitalize each word except first letter
+     * @param text Setence or pharease to be converted camelCase
+     */
+    public static void convertCamelCase(String text){
+var modifiedText = new StringBuilder(text);
+        for (int i = 0; i <modifiedText.length() ; i++) {
+
+        }
     }
 
 }
