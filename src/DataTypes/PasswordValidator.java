@@ -30,8 +30,11 @@ if (password.equals(password.toLowerCase())){
     public static void checkSpecialChar(String password){
 
     }
-    public static void checkUsername(String password){
+    public static boolean checkUsername(String password, String userName){
+if (userName.equals(password)){
+    return false;
 
+}return true;
     }
     public static void checkOldPassword(String password){
 
