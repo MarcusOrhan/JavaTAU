@@ -22,8 +22,10 @@ public class PasswordValidator {
             return true;
         }return false;
     }
-    public static void checkUppercase(String password){
-
+    public static boolean checkUppercase(String password){
+if (password.equals(password.toLowerCase())){
+    return false;
+}return true;
     }
     public static void checkSpecialChar(String password){
 
