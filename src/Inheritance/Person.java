@@ -1,5 +1,6 @@
 package Inheritance;
 
 public class Person {
-    String person;
+    String person="";
+
 }
