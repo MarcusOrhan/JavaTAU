@@ -2,8 +2,7 @@ package Inheritance;
 
 public class InheritanceTester {
     public static void main(String[] args) {
-        Person person = new Person();
-        Employee employee = new Employee();
+
         Mother mom = new Mother();
         mom.setName("Emine");
         System.out.println(mom.getName()+"is my mom and She is a "+ mom.getGender());
@@ -18,6 +17,10 @@ public class InheritanceTester {
         rectangle.setLength(6);
         rectangle.setWidth(7);
         System.out.println(square.calculatePerimeter());
+    }
+    public static void testInheritance(){
+        Employee employee = new Employee();
+        employee.setTitle("Mr. Ord. Prof. Dr. ");
     }
     public static void testOverload(){
         Rectangle rectangle = new Rectangle();
