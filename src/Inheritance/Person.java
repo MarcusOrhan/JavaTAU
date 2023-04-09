@@ -5,11 +5,12 @@ public class Person {
     private int age;
     private String gender;
 
-    public Person(){
-        System.out.println(" in Person class = Default constructor " );
+    public Person() {
+        System.out.println(" in Person class = Default constructor ");
     }
-    public Person (String name){
-        System.out.println(" The @nd Constructor in Person Class which  NAME set = " + name);
+
+    public Person(String name) {
+        System.out.println(" The 2nd Constructor in Person Class which  NAME set = " + name);
     }
 
     public String getName() {
