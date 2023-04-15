@@ -1,12 +1,17 @@
 package Collections.Demo;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 public class CollectionsDemo {
     public static void main(String[] args) {
         setDemo();
+
     }
+
+
     public static void setDemo(){
         Set <String >fruit = new HashSet<>();
         fruit.add("Lemon");
@@ -28,5 +33,19 @@ for (String item : fruit  ){
 
 fruit.forEach(x -> System.out.println("x = " + x) );
 fruit.forEach(System.out::println);
+    }
+
+    public static void mapDemo(){
+        Map<String , Integer > fruitCalories = new HashMap();
+
+        fruitCalories.put("Apple", 95);
+        fruitCalories.put("Mango", 105);
+        fruitCalories.put("Avocado", 295);
+        fruitCalories.put("Apple", 50);
+        fruitCalories.put("Starfruit", 55);
+
+        for(var entry : fruitCalories.entrySet()){
+            System.out.println(entry.getValue());
+        }
     }
 }
