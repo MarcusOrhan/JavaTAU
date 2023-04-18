@@ -8,6 +8,9 @@ import java.util.Set;
 public class CollectionsDemo {
     public static void main(String[] args) {
         setDemo();
+        listDemo();
+        queDemo();
+        mapDemo();
 
     }
 
@@ -32,7 +35,7 @@ for (String item : fruit  ){
 }
 
 fruit.forEach(x -> System.out.println("x = " + x) );
-fruit.forEach(System.out::println);
+fruit.forEach(System.out::println); // Syntaxtic Sugar
     }
 
     public static void mapDemo(){
@@ -47,5 +50,8 @@ fruit.forEach(System.out::println);
         for(var entry : fruitCalories.entrySet()){
             System.out.println(entry.getValue());
         }
+
+        fruitCalories.forEach(
+                (k,v)->System.out.println("Fruit: " + k + ", Calories: " + v));
     }
 }
