@@ -8,8 +8,8 @@ import java.util.Set;
 public class CollectionsDemo {
     public static void main(String[] args) {
         setDemo();
-        listDemo();
-        queDemo();
+//        listDemo();
+//        queDemo();
         mapDemo();
 
     }
